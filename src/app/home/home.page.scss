@@ -1,0 +1,38 @@
+ion-header{
+  max-height: 50px;
+}
+ion-toolbar{
+  --background: rgba(5, 5, 5, 0.8) !important;
+  color: white;
+  height: 100%;
+}
+ion-col > div {
+    background-color: rgb(247, 247, 247);
+    border: solid 1px rgb(192, 191, 191);
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+  }
+ion-col{
+    padding: 0;
+}
+.mainPump img{
+  margin: 0 auto;
+  height: 150px;
+  width: 200px;
+}
+.mainPump ion-item{
+  --background: rgb(45, 204, 106);
+  height: 40px;
+  color: white;
+}
+ion-title{
+  padding: 0;
+}
+.logout{
+  position: absolute;
+  right: -6px;
+  top: 8px;
+  --background: transparent;
+  font-size: 24px;
+}

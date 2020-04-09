@@ -1,0 +1,19 @@
+ion-header{
+    max-height: 50px;
+  }
+  ion-toolbar{
+    --background: rgba(5, 5, 5, 0.8) !important;
+    color: white;
+    height: 100%;
+  }
+  ion-content{
+      --background: rgba(179, 178, 178, 0.315);
+  }
+  ion-list{
+    padding: 5px;
+  }
+  ion-list > ion-item{
+    margin-bottom: 5px;
+    --background: rgb(223, 224, 223);
+    border-radius: 12px;
+  }

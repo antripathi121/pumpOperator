@@ -1,0 +1,7 @@
+{
+  "name": "pump",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,93 @@
+ion-header{
+    height: 50px;
+}
+ion-toolbar{
+    --background: rgba(5, 5, 5, 0.8) !important;
+    color: white;
+    height: 100%;
+}
+.login{
+    // --background:rgb(190, 187, 187);
+    // height: 100%;
+    // width: 100%;
+    position: fixed;
+    background-image: url('/assets/image/field2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.loginCard{
+    background: rgba(255, 255, 255, 0.349) !important;
+    border: 1px solid gray;
+    border-radius: 12px;
+    // height: 75%;
+    width: 95%;
+    position: relative;
+    top: 50px;
+    bottom: 10px;
+    padding-top: 30px;
+    text-align: center;
+//  display: flex;
+// flex-direction: column;
+// justify-content: center;
+}
+.loginIcon{
+    border: 3px solid rgb(124, 28, 28);
+    box-shadow: 2px 2px 5px 5px rgba(8, 8, 8, 0.281);
+    border-radius: 50%;
+    height: 102px;
+    width: 102px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.loginIcon img{
+    border-radius: 43%;
+    height: 90px;
+    width: 90px;
+    margin: 0 auto;
+    position: relative;
+}
+ion-item, ion-input{
+    border-radius: 26px;
+    height: 60px;
+}
+ion-item{
+    border: 1px solid rgb(247, 8, 147);
+    box-shadow: 2px 2px rgba(68, 43, 57, 0.281);
+    margin: 20px 5px;
+}
+.loginform{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.loginform p{
+    font-size: 20px;
+    color: rgb(12, 12, 29);
+}
+.loginform a{
+    color: rgb(119, 73, 161);
+    background-color: rgba(245, 245, 245, 0.521);
+    border-radius: 10px;
+    padding: 0px 5px 0px 5px;
+}
+ion-input{
+    padding: 4px 10px;
+}
+.loginform ion-icon{
+    float: right;
+    width: 23px;
+    height: 22px;
+    margin-right: 5px;
+}
+ion-button{
+    --background:rgb(247, 8, 147);
+    font-size: large;
+    --border-radius: 14px;
+}

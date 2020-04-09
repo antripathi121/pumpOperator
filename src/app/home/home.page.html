@@ -1,0 +1,34 @@
+<ion-header translucent>
+  <ion-toolbar class="ion-text-center">
+    <ion-title>
+      Pump Operator
+    </ion-title>
+    <ion-button (click)='logout()' class="logout" slot="end">
+    <ion-icon name="power"></ion-icon>
+  </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+  <ion-card class="mainPump">
+    <ion-item><span>POWER (ON/OFF)</span>
+      <ion-toggle slot="end" value="power" (ionChange)='power($event)'></ion-toggle>
+    </ion-item>
+
+    <img *ngIf='status==false' src="assets/gear-pump.jpg" alt="">
+    <img *ngIf='status' src="assets/gear-pump.gif" alt="">
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>Field 1</div>
+      </ion-col>
+      <ion-col>
+        <div>Field 2</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-button (click)='presentModal()' style="position: relative;" color="success" expand='block'>
+    <ion-icon style="left: 10px; position: absolute;" name="alarm"></ion-icon>
+    <span>Schedule</span></ion-button>
+</ion-content>

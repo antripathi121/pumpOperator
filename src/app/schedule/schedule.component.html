@@ -1,0 +1,37 @@
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="ion-text-center">SCHEDULER</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content fullscreen padding>
+
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="Title"></ion-input>
+      </ion-item>
+      <ion-item-divider></ion-item-divider>
+      <ion-item>
+        <ion-label>Start Date</ion-label>
+        <ion-datetime min='{{myDate}}' placeholder="Select Date" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>Start Time</ion-label>
+        <ion-datetime display-format="h:mm A" picker-format="h:mm A" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>Stop Date</ion-label>
+        <ion-datetime min='{{myDate}}' placeholder="Select Date"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>Stop Time</ion-label>
+        <ion-datetime display-format="h:mm A" picker-format="h:mm A" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>Repeat</ion-label>
+        <ion-datetime placeholder="Never" disabled></ion-datetime>
+      </ion-item>
+    </ion-list>
+    <ion-button (click)='dismiss()' style="position: relative;" color="success" expand='block'>
+      <span>Schedule</span>
+    </ion-button>
+  </ion-content>

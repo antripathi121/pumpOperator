@@ -1,0 +1,32 @@
+.ios, .md {
+    page-splash {
+      .scroll-content{
+        overflow:hidden;
+      }
+      .scroll-content {
+        display: flex;
+        justify-content: center;
+        background: #1b2ea6;
+  
+      }
+      .imglogo {
+        top: auto;
+        margin-top: 50vw;
+        height: 5vw;
+        position: relative;
+        text-align: center;
+  
+        .fulllogo {
+          align-items: center;
+          margin-top: 10vw;
+          width: 45vw;
+          height: 12vw;
+          position: relative;
+        }
+      }
+    }
+    // ion-slides{
+    //   margin-top: 30vh;
+    // }
+  }
+  

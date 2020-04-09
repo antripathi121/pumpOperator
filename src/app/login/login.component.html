@@ -1,0 +1,45 @@
+<ion-header translucent >
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="back">
+  <div class="login">
+    
+    <ion-card class="loginCard">  
+      <div class="loginIcon">
+        <img src="assets/gear-pump.gif" alt="">
+      </div>           
+        <!-- <ion-card-content> -->
+            <div class="loginform">
+                <form #form="ngForm" (ngSubmit)="login(form)" (keyup.enter)="login(form)" >
+                  <!-- <ion-list lines="full" class="ion-no-margin ion-no-padding"> -->
+                    
+                    <ion-item>
+                      <!-- <ion-label position="floating">Username</ion-label> -->
+                      <ion-input placeholder='Username' [(ngModel)]="email" type='email' name='email'></ion-input>
+                    </ion-item>
+                    
+                    <!-- <div> -->
+                    <ion-item>
+                        <!-- <ion-label position="floating">Password</ion-label> -->
+                        <ion-input placeholder="Password" [type]="getType()" [(ngModel)]="password" type='password' name='password' ></ion-input>
+                    
+                    <ion-icon  name="eye"  (click)="toggleTextPassword()" ></ion-icon>
+                  </ion-item>
+                  <!-- </div> -->
+                    <p> <a (click)="forget()">Forgot Password ?</a> </p>
+                  <!-- </ion-list> -->
+              
+                  <div class="ion-padding">
+                    <ion-button expand="block"  type="submit" class="ion-no-margin">Login</ion-button>
+                  </div>
+                </form>
+                <p>New User ? <a routerLink="/register">Register</a> Please</p>
+              </div>
+        <!-- </ion-card-content> -->
+      </ion-card>  
+    </div>
+      
+</ion-content>
